@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerGrini</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>malename->GriniNames/malename</li>
+        <li>femalename->GriniNames/femalename</li>
+        <li>lastname->GriniNames/lastname</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerPersonGriniMale</defName>
+    <include>
+      <li>NamerGrini</li>
+    </include>
+    <rulePack>
+		<rulesStrings>
+			<li>r_name->[malename] [lastname]</li>
+		</rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonGriniFemale</defName>
+    <include>
+      <li>NamerGrini</li>
+    </include>
+    <rulePack>
+		<rulesStrings>
+			<li>r_name->[femalename] [lastname]</li>
+		</rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

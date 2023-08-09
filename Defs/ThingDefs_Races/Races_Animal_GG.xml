@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="SK_AnimalThingBase">
+		<defName>GrinCat</defName>
+		<label>ГриньКот</label>
+		<description>Как Гринюк но меньше , в чём то даже лучше</description>
+		<statBases>
+			<Mass>10</Mass>
+			<MoveSpeed>6</MoveSpeed>
+			<ComfyTemperatureMin>-27</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<MarketValue>120</MarketValue>
+			<ImmunityGainSpeed>5</ImmunityGainSpeed>
+			<MeatAmount>70</MeatAmount>
+			<Flammability>1</Flammability>
+			<ArmorRating_Blunt>2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<MeleeCritChance>0</MeleeCritChance>
+			<GermResistance>0.15</GermResistance>
+			<GermContainment>0.15</GermContainment>
+			<FilthRate>1</FilthRate>
+			<NightVisionEfficiency>1</NightVisionEfficiency>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1.55</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<armorPenetrationSharp>4</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>1.55</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<armorPenetrationSharp>4</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<armorPenetrationSharp>5.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<comps>
+			<li Class="SK.CompProperties_Regeneration">
+				<rateInTicks>500</rateInTicks>
+			</li>
+		</comps>
+		<race>
+			<predator>true</predator>
+			<maxPreyBodySize>0.7</maxPreyBodySize>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseBodySize>1.6</baseBodySize>
+			<baseHungerRate>1.7</baseHungerRate>
+			<baseHealthScale>9</baseHealthScale>
+			<foodType>CarnivoreAnimal, CarnivoreAnimalStrict, OmnivoreRoughAnimal</foodType>
+			<petness>0</petness>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale>
+			<trainability>Advanced</trainability>
+			<useMeatFrom>Elephant</useMeatFrom>
+			<leatherDef>Leather_Grini</leatherDef>
+			<gestationPeriodDays>11</gestationPeriodDays>
+			<wildness>0.3</wildness>
+			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<nuzzleMtbHours>60</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>170</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.5</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1.1</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundCall>Pawn_Warg_Call</soundCall>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>AnimalPet</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="SK_AnimalKindBase">
+		<defName>GrinKaT</defName>
+		<label>ГриньКот</label>
+		<race>GrinCat</race>
+		<combatPower>550</combatPower>
+		<ecoSystemWeight>0.95</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<label>Barghest Puppy</label>
+				<bodyGraphicData>
+					<texPath>Things/KIT/CatG</texPath>
+					<drawSize>0.7</drawSize>
+					<color>(220,220,220)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/KIT/CatG</texPath>
+					<drawSize>0.9</drawSize>
+					<color>(220,220,220)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/KIT/CatG</texPath>
+					<drawSize>1.2</drawSize>
+					<color>(220,220,220)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="SK.PawnGraphicExtension">
+				<colors>
+			
+					<li>(61,108,110)</li>
+					<li>(63,117,99)</li>
+					<li>(46,114,91)</li>
+					<li>(40,118,121)</li>
+					<li>(39,116,79)</li>
+					<li>(91,128,110)</li>
+					<li>(83,129,85)</li>
+					<li>(38,97,39)</li>
+					<li>(92,126,43)</li>
+					<li>(84,140,60)</li>
+				</colors>
+				<shaderType>Cutout</shaderType>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

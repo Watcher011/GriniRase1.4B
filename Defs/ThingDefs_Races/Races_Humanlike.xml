@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
+		<defName>Alien_Grini</defName>
+		<label>Зеленые Гринюки</label>
+		<description>Гринюки обладают невысоким ростом, крупным черепом и добрыми глазами. Их кожа грубая и покрыта шерстью, всевозможных оттенков зелёного. Несмотря на достаточно хрупкое строение тела, Гринюки не чураются тяжелого труда, они по своей природе превосходные строители, инженеры и изобретатели.
+
+Эти зелёные коротышки обладают, поистине, неисчерпаемой энергией и желанием работать и трудиться. Отсутствие подобного энтузиазма в любом деле вызывает у гринюка искреннее недоумение. Гринюки обожают механизмы и механику, любят всё взрывающееся, стреляющее и гудящее, любят создавать что-то новое, или строить грандиозные сооружения вроде строений, или механизмов.
+
+На дух не переносят гномов, как конкурентов на поприще строителей и инженеров.
+
+Гринюки прекрасно осознают своё положение в колонии, впрочем, их оно полностью устраивает. Они, в силу своего менталитета, называют любых людей, и прочих вышестоящих товарищей «Эй ты».Гринюки отлично показывают себя в ближнем бою также в их эксперименты либо не лезут, либо оказывают поддержу.
+
+В случае сильного падения морали, например, если в колонии присутствуют гномы, Гринюки не покидают промышленность, а саботируют промышленность, вплоть до разрушения зданий и так горячо любимых ими механизмов.</description>
+		<alienRace>
+			<generalSettings>
+			<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>   
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<humanRecipeImport>true</humanRecipeImport>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Grinz</defName>
+						<chance>100</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>		
+				    <li>
+						<defName>DrugDesire</defName>
+					</li>
+					<li>
+						<defName>HeatLover</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+			        	<headOffset>(0, -0.09)</headOffset>	
+						<atlasScale>2</atlasScale>
+					<borderScale>1</borderScale>
+				    	<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li>Thin</li>
+					</bodyTypes>
+					<customDrawSize>(0.85, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.85, 1.1)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+					<oldHairAgeRange>80.0~120.0</oldHairAgeRange>
+					 <!--
+					<aliencrowntypes>
+						           <li>Average_Normal</li>
+                                    <li>Average_Wide</li>
+                                    <li>Average_Pointy</li>
+                                    <li>Narrow_Normal</li>
+                                    <li>Narrow_Pointy</li>
+                                    <li>Narrow_Wide</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						            <li>Male</li>
+									<li>Female</li>
+									<li>Thin</li>
+									<li>Hulk</li>
+									<li>Fat</li>
+					</alienbodytypes>
+					<useGenderedHeads>true</useGenderedHeads>
+					<customDrawSize>(0.85, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.85, 1.1)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>-->
+					<bodyAddons>
+						<li>
+							<drawnDesiccated>false</drawnDesiccated>
+							<drawSize>0.9</drawSize>
+							<path>Things/Pawn/Humanlike/GriniEars/EarLeft</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<defaultOffset>Tail</defaultOffset>
+							<!--<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Grini</geneRequirement>-->
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.475,.67)</Male>
+										<Female>(-0.475,.67)</Female>
+										<Thin>(-0.475,.67)</Thin>
+										<Hulk>(-0.475,.67)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.45,0.67)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.45,0.67)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.45,.67)</Male>
+										<Female>(-0.45,.67)</Female>
+										<Thin>(-0.45,.67)</Thin>
+										<Hulk>(-0.45,.67)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.45,0.67)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.45,0.67)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Male>(0.05,1)</Male>
+										<Female>(0.05,1)</Female>
+										<Thin>(0.05,1)</Thin>
+										<Hulk>(0.05,1)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.01,1)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.01,1)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.04,.89)</Male>
+										<Female>(-0.04,.89)</Female>
+										<Thin>(-0.04,.89)</Thin>
+										<Hulk>(-0.04,.89)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.04,0.89)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04,0.89)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+									<layerOffset>-0.35</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Male>(-0.44,.75)</Male>
+										<Female>(-0.44,.75)</Female>
+										<Thin>(-0.44,.75)</Thin>
+										<Hulk>(-0.44,.75)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.75)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.75)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.44,.75)</Male>
+										<Female>(-0.44,.75)</Female>
+										<Thin>(-0.44,.75)</Thin>
+										<Hulk>(-0.44,.75)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.75)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.75)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+						<li>
+							<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+							<drawnDesiccated>false</drawnDesiccated>
+							<drawSize>0.9</drawSize>
+							<path>Things/Pawn/Humanlike/GriniEars/EarRight</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<defaultOffset>Tail</defaultOffset>
+							<!--<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Grini</geneRequirement>-->
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.4,.67)</Male>
+										<Female>(-0.4,.67)</Female>
+										<Thin>(-0.4,.67)</Thin>
+										<Hulk>(-0.4,.67)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.4,0.67)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.4,0.67)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.4,.67)</Male>
+										<Female>(-0.4,.67)</Female>
+										<Thin>(-0.4,.67)</Thin>
+										<Hulk>(-0.4,.67)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.4,0.67)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.4,0.67)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Male>(-0.038,.98)</Male>
+										<Female>(-0.038,.98)</Female>
+										<Thin>(-0.038,.98)</Thin>
+										<Hulk>(-0.038,.98)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.038,0.98)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.038,0.98)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.01,1)</Male>
+										<Female>(-0.01,1)</Female>
+										<Thin>(-0.01,1)</Thin>
+										<Hulk>(-0.01,1)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.03,1)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.03,1)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+									<layerOffset>-0.35</layerOffset>
+								</north>
+								<east>
+									<bodyTypes>
+										<Male>(-0.54,.75)</Male>
+										<Female>(-0.54,.75)</Female>
+										<Thin>(-0.54,.75)</Thin>
+										<Hulk>(-0.54,.75)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.54,0.75)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.54,0.75)</Baby>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Male>(-0.54,.75)</Male>
+										<Female>(-0.54,.75)</Female>
+										<Thin>(-0.54,.75)</Thin>
+										<Hulk>(-0.54,.75)</Hulk>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.54,0.75)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.54,0.75)</Baby>
+									</portraitBodyTypes>
+									<headTypes>
+										<Male_AverageNormal>(0,0)</Male_AverageNormal>
+										<Female_AverageNormal>(0,0)</Female_AverageNormal>
+									</headTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
+					</bodyAddons>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>5</weight>
+										<only>(0.5,0.8,0.0,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.5,0.75,0.0,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.5,0.7,0.0,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>(0.5,0.65,0.0,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<!-- White Blonde -->
+										<weight>5</weight>
+										<only>RGBA(1.0,0.96,0.88,1)</only>
+									</li>				
+									<li>
+										<!-- Light Blonde -->
+										<weight>5</weight>
+										<only>RGBA(0.9,0.81,0.66,1)</only>
+									</li>				
+									<li>
+										<!-- Bleached Blonde -->
+										<weight>5</weight>
+										<only>RGBA(0.86,0.82,0.73,1)</only>
+									</li>				
+									<li>
+										<!-- Brown -->
+										<weight>1</weight>
+										<only>RGBA(0.42,0.31,0.26,1)</only>
+									</li>
+									<li>
+										<!-- Dark Auburn -->
+										<weight>1</weight>
+										<only>RGBA(0.33,0.24,0.20,1)</only>
+									</li>
+									<li>
+										<!-- Light Red Hair -->
+										<weight>1</weight>
+										<only>RGBA(0.71,0.32,0.22,1)</only>
+									</li>
+									<li>
+										<!-- Silver -->
+										<weight>0.25</weight>
+										<only>RGBA(0.75,0.75,0.75,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Single">
+								<color>RGBA(128, 255, 0, 255)</color>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<growthAges>
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
+				<reproduction>
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(20, 1)</li>
+							<li>(40, 1)</li>
+							<li>(60, 0.5)</li>
+							<li>(75, 0.1)</li>
+							<li>(90, 0.02)</li>
+							<li>(110, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(18, 1)</li>
+							<li>(70, 1)</li>
+							<li>(120, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+				</reproduction>
+			</generalSettings>
+			<graphicPaths>
+				<skinShader>CutoutSkin</skinShader>
+			     <head>
+					<path>Things/Pawn/Humanlike/GriniHeads/</path>
+					<headtypeGraphics>
+					  <Male_AverageNormal>Things/Pawn/Humanlike/GriniHeads/Male_AverageNormal</Male_AverageNormal>
+					  <Female_AverageNormal>Things/Pawn/Humanlike/GriniHeads/Female_AverageNormal</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<body>
+					<path>Things/Grini/Body/</path>
+					<bodytypeGraphics>
+				    	<Male>Things/Grini/Body/Naked_Male</Male>
+						<Thin>Things/Grini/Body/Naked_Thin</Thin>
+						<Hulk>Things/Grini/Body/Naked_Hulk</Hulk>
+						<Fat>Things/Grini/Body/Naked_Fat</Fat>
+						<Female>Things/Grini/Body/Naked_Female</Female>
+						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Grini/Body/Naked_Child</Child>
+						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Grini/Body/Naked_Baby</Baby>
+					</bodytypeGraphics>
+				</body>
+             </graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<!--<styleTags>
+                            <li>Rural</li>
+							<li>Urban</li>
+							<li>Punk</li>
+                            <li>Tribal</li>
+							<li>Minimal</li>
+                        </styleTags>-->
+					</value>
+				</li>
+			</styleSettings>
+			<thoughtSettings>
+				<butcherThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>ButcheredHumanlikeCorpse</thought>
+						<knowThought>KnowButcheredHumanlikeCorpse</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				<ateThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirect</thought>
+						<ingredientThought>AteHumanlikeMeatAsIngredient</ingredientThought>
+					</li>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirectCannibal</thought>
+						<ingredientThought>AteHumanlikeMeatAsIngredientCannibal</ingredientThought>
+					</li>
+				</ateThoughtSpecific>
+				 <cannotReceiveThoughts>
+					<li>AteRawFood</li>
+					<li>SleptOnGround</li>
+					<li>SharedBed</li>
+                </cannotReceiveThoughts>
+			</thoughtSettings>	
+			<raceRestriction>
+			                            <apparelList></apparelList>
+										<whiteApparelList></whiteApparelList>
+										<weaponList></weaponList>
+										<whiteWeaponList></whiteWeaponList>
+										<buildingList></buildingList>
+										<whiteBuildingList></whiteBuildingList>
+										<recipeList></recipeList>
+										<plantList></plantList>
+										<whitePlantList></whitePlantList>
+										<traitList></traitList>
+										<whiteTraitList></whiteTraitList>
+										<foodList></foodList>
+										<petList></petList>
+										<conceptList></conceptList>
+										<workGiverList></workGiverList>
+				<blackEndoCategories>
+				 <li>Melanin</li> <!-- this was commented out -->
+				  <li>HairColor</li>
+				    <li>Head</li>
+				  <li>Ears</li>
+				  <li>Nose</li>
+				  <li>Jaw</li>
+				  <li>Hands</li>
+				  <li>Headbone</li>
+				  <li>BodyType</li>
+				  <li>Voice</li>
+				</blackEndoCategories>
+			</raceRestriction>	
+		</alienRace>
+		<statBases>
+				<Mass>66</Mass>
+			<MarketValue>2750</MarketValue>
+			<MoveSpeed>5.25</MoveSpeed>
+			<Flammability>0.5</Flammability>
+			<PsychicSensitivity>0.90</PsychicSensitivity>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>29</ComfyTemperatureMax>
+			  <ConstructSuccessChance>1.1</ConstructSuccessChance>
+			<ConstructionSpeed>1.55</ConstructionSpeed>
+			<CollectingSpeed>1</CollectingSpeed>
+			<GeneralLaborSpeed>1</GeneralLaborSpeed>
+			<CleaningSpeed>1</CleaningSpeed>
+			<SmoothingSpeed>1</SmoothingSpeed>
+			<PlantWorkSpeed>1</PlantWorkSpeed>
+			<PlantHarvestYield>1</PlantHarvestYield>
+			<HuntingStealth>1</HuntingStealth>
+			<SmithingSpeed>1</SmithingSpeed>
+			<ElectronicCraftingSpeed>1.2</ElectronicCraftingSpeed>
+			
+			<LeatherAmount>30</LeatherAmount>
+			<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+			<EatingSpeed>0.95</EatingSpeed>
+			<GlobalLearningFactor>1.3</GlobalLearningFactor>
+			<MeleeDodgeChance>1.4</MeleeDodgeChance>
+			<GermResistance>0.07</GermResistance>
+			<GermContainment>0.1</GermContainment>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+				<armorPenetrationSharp>0.6</armorPenetrationSharp>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tickerType>Normal</tickerType>
+		<race>
+			<useMeatFrom>Human</useMeatFrom>
+			<leatherDef>Leather_Grini</leatherDef>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<nameGenerator>NamerPersonGriniMale</nameGenerator>
+			<nameGeneratorFemale>NamerPersonGriniFemale</nameGeneratorFemale>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>140</lifeExpectancy>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>1.05</baseHealthScale>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<baseHungerRate>0.9</baseHungerRate>
+			<foodType>OmnivoreHuman</foodType>
+            <gestationPeriodDays>21</gestationPeriodDays>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,25)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,30)</li>
+					<li>(16,100)</li>
+					<li>(60,100)</li>
+					<li>(70,60)</li>
+					<li>(90,45)</li>
+					<li>(100,20)</li>
+					<li>(120,5)</li>
+					<li>(130,0)</li>
+				</points>
+			</ageGenerationCurve>
+			
+			<litterSizeCurve Inherit="false">
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 0.3)</li>
+					<li>(2, 0.4)</li>
+					<li>(3, 0.1)</li>
+					<li>(4, 0.2)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges Inherit="false">
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+				  <def>HumanlikePreTeenager</def>
+				  <minAge>8</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>11</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>16</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>4</Hauling>
+				<Cleaning>4</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+		
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Grini</defName>
+		<label>Пушистый Зелёный мех</label>
+		<description>Зелёный мех добытый из могучего воина, при разделке альфа самца.</description>
+		<graphicData>
+			<color>(39,239,39)</color>
+			<colorTwo>(139,239,139)</colorTwo>
+		</graphicData>
+		<statBases>
+		   <MaxHitPoints>5</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<MarketValue>6.4</MarketValue>
+			<StuffPower_Armor_Sharp>1.11</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.01</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>45</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(39,239,39)</color>
+			<commonality>0.0025</commonality>
+			 <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+        <Beauty>9</Beauty>
+		<MoveSpeed>1.1</MoveSpeed>
+		<MarketValue>0.8</MarketValue>
+		<WorkToMake>2.4</WorkToMake>
+      </statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+	
+	
+	
+		<AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
+		<defName>Alien_Grini_White</defName>
+		<label>Белые Гринюки</label>
+		<description>Гринюки обладают невысоким ростом, крупным черепом и добрыми глазами. Их кожа грубая и покрыта шерстью, всевозможных оттенков зелёного. Несмотря на достаточно хрупкое строение тела, Гринюки не чураются тяжелого труда, они по своей природе превосходные строители, инженеры и изобретатели.Раз в несколько десятилетий рождается сильный пси одарённый - Белый Гринюк.</description>
+		<alienRace>
+			<generalSettings>
+			<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>   
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<humanRecipeImport>true</humanRecipeImport>
+				<maleGenderProbability>1</maleGenderProbability>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Grinz</defName>
+						<chance>100</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>		
+				    <li>
+						<defName>DrugDesire</defName>
+					</li>
+					<li>
+						<defName>HeatLover</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+			        	<headOffset>(0, -0.09)</headOffset>	
+						<atlasScale>2</atlasScale>
+					<borderScale>1</borderScale>
+				    	<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li>Thin</li>
+					</bodyTypes>
+					<customDrawSize>(0.85, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.85, 1.1)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+					<oldHairAgeRange>80.0~120.0</oldHairAgeRange>
+					
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>(1,1,1,1)</only>
+									</li>
+									
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<!-- White Blonde -->
+										<weight>5</weight>
+										<only>RGBA(1.0,0.96,0.88,1)</only>
+									</li>				
+									<li>
+										<!-- Light Blonde -->
+										<weight>5</weight>
+										<only>RGBA(0.9,0.81,0.66,1)</only>
+									</li>				
+									<li>
+										<!-- Bleached Blonde -->
+										<weight>5</weight>
+										<only>RGBA(0.86,0.82,0.73,1)</only>
+									</li>				
+									<li>
+										<!-- Brown -->
+										<weight>1</weight>
+										<only>RGBA(0.42,0.31,0.26,1)</only>
+									</li>
+									<li>
+										<!-- Dark Auburn -->
+										<weight>1</weight>
+										<only>RGBA(0.33,0.24,0.20,1)</only>
+									</li>
+									<li>
+										<!-- Light Red Hair -->
+										<weight>1</weight>
+										<only>RGBA(0.71,0.32,0.22,1)</only>
+									</li>
+									<li>
+										<!-- Silver -->
+										<weight>0.25</weight>
+										<only>RGBA(0.75,0.75,0.75,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Single">
+								<color>RGBA(255, 255,255, 255)</color>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<growthAges>
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
+				<reproduction>
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(20, 1)</li>
+							<li>(40, 1)</li>
+							<li>(60, 0.5)</li>
+							<li>(75, 0.1)</li>
+							<li>(90, 0.02)</li>
+							<li>(110, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(14, 0)</li>
+							<li>(18, 1)</li>
+							<li>(70, 1)</li>
+							<li>(120, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+				</reproduction>
+			</generalSettings>
+			<graphicPaths>
+				<skinShader>CutoutSkin</skinShader>
+			     <head>
+					<path>Things/Grini/Head/</path>
+					<headtypeGraphics>
+					  <Male_AverageNormal>Things/Grini/Head/Male_Average_Normal</Male_AverageNormal>
+					  <Female_AverageNormal>Things/Grini/Head/Female_Average_Normal</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<body>
+					<path>Things/Grini/Body/</path>
+					<bodytypeGraphics>
+				    	<Male>Things/Grini/Body/Naked_Male</Male>
+						<Thin>Things/Grini/Body/Naked_Thin</Thin>
+						<Hulk>Things/Grini/Body/Naked_Hulk</Hulk>
+						<Fat>Things/Grini/Body/Naked_Fat</Fat>
+						<Female>Things/Grini/Body/Naked_Female</Female>
+						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Grini/Body/Naked_Child</Child>
+						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Grini/Body/Naked_Baby</Baby>
+					</bodytypeGraphics>
+				</body>
+             </graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+                            <li>Rural</li>
+							<li>Urban</li>
+							<li>Punk</li>
+                            <li>Tribal</li>
+							<li>Minimal</li>
+                        </styleTags>
+					</value>
+				</li>
+			</styleSettings>
+			<thoughtSettings>
+				<butcherThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>ButcheredHumanlikeCorpse</thought>
+						<knowThought>KnowButcheredHumanlikeCorpse</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				<ateThoughtSpecific>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirect</thought>
+						<ingredientThought>AteHumanlikeMeatAsIngredient</ingredientThought>
+					</li>
+					<li>
+						<raceList>
+							<li>Human</li>
+							<li>Alien_Grini</li>
+							<li>Alien_Nova</li>
+							<li>Alien_Dova</li>
+							<li>Norbal</li>
+							<li>Alien_Orassan</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirectCannibal</thought>
+						<ingredientThought>AteHumanlikeMeatAsIngredientCannibal</ingredientThought>
+					</li>
+				</ateThoughtSpecific>
+				 <cannotReceiveThoughts>
+					<li>AteRawFood</li>
+					<li>SleptOnGround</li>
+					<li>SharedBed</li>
+                </cannotReceiveThoughts>
+			</thoughtSettings>	
+			<raceRestriction>
+			                            <apparelList></apparelList>
+										<whiteApparelList></whiteApparelList>
+										<weaponList></weaponList>
+										<whiteWeaponList></whiteWeaponList>
+										<buildingList></buildingList>
+										<whiteBuildingList></whiteBuildingList>
+										<recipeList></recipeList>
+										<plantList></plantList>
+										<whitePlantList></whitePlantList>
+										<traitList></traitList>
+										<whiteTraitList></whiteTraitList>
+										<foodList></foodList>
+										<petList></petList>
+										<conceptList></conceptList>
+										<workGiverList></workGiverList>
+				<blackEndoCategories>
+				 <li>Melanin</li> <!-- this was commented out -->
+				  <li>HairColor</li>
+				    <li>Head</li>
+				  <li>Ears</li>
+				  <li>Nose</li>
+				  <li>Jaw</li>
+				  <li>Hands</li>
+				  <li>Headbone</li>
+				  <li>BodyType</li>
+				  <li>Voice</li>
+				</blackEndoCategories>
+			</raceRestriction>	
+		</alienRace>
+		<statBases>
+				<Mass>66</Mass>
+			<MarketValue>2750</MarketValue>
+			<MoveSpeed>5.25</MoveSpeed>
+			<Flammability>0.5</Flammability>
+			<PsychicSensitivity>1.2</PsychicSensitivity>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>29</ComfyTemperatureMax>
+			  <ConstructSuccessChance>1.1</ConstructSuccessChance>
+			<ConstructionSpeed>1.55</ConstructionSpeed>
+			<CollectingSpeed>1</CollectingSpeed>
+			<GeneralLaborSpeed>1</GeneralLaborSpeed>
+			<CleaningSpeed>1</CleaningSpeed>
+			<SmoothingSpeed>1</SmoothingSpeed>
+			<PlantWorkSpeed>1</PlantWorkSpeed>
+			<PlantHarvestYield>1</PlantHarvestYield>
+			<HuntingStealth>1</HuntingStealth>
+			<SmithingSpeed>1</SmithingSpeed>
+			<ElectronicCraftingSpeed>1.2</ElectronicCraftingSpeed>
+			
+			<LeatherAmount>30</LeatherAmount>
+			<ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+			<EatingSpeed>0.95</EatingSpeed>
+			<GlobalLearningFactor>1.3</GlobalLearningFactor>
+			<MeleeDodgeChance>1.4</MeleeDodgeChance>
+			<GermResistance>0.07</GermResistance>
+			<GermContainment>0.1</GermContainment>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.3</chanceFactor>
+				<armorPenetrationSharp>0.6</armorPenetrationSharp>
+				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tickerType>Normal</tickerType>
+		<race>
+			<useMeatFrom>Human</useMeatFrom>
+			<leatherDef>Leather_Grini</leatherDef>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<nameGenerator>NamerPersonGriniMale</nameGenerator>
+			<nameGeneratorFemale>NamerPersonGriniFemale</nameGeneratorFemale>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>140</lifeExpectancy>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>1.05</baseHealthScale>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<baseHungerRate>0.9</baseHungerRate>
+			<foodType>OmnivoreHuman</foodType>
+            <gestationPeriodDays>21</gestationPeriodDays>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>
+					<!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li>
+					<!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,25)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,30)</li>
+					<li>(16,100)</li>
+					<li>(60,100)</li>
+					<li>(70,60)</li>
+					<li>(90,45)</li>
+					<li>(100,20)</li>
+					<li>(120,5)</li>
+					<li>(130,0)</li>
+				</points>
+			</ageGenerationCurve>
+			
+			<litterSizeCurve Inherit="false">
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 0.3)</li>
+					<li>(2, 0.4)</li>
+					<li>(3, 0.1)</li>
+					<li>(4, 0.2)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges Inherit="false">
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+				  <def>HumanlikePreTeenager</def>
+				  <minAge>8</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>11</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>16</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>4</Hauling>
+				<Cleaning>4</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+		<comps>
+			<li>
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+</Defs>

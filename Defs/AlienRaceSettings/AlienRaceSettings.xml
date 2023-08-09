@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<AlienRace.RaceSettings>
+    <defName>Grini_Settings</defName>
+     <pawnKindSettings>
+            <startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>GriniColonist</li>
+							</kindDefs>
+							<chance>15</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Grini</li>
+							</kindDefs>
+							<chance>25</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+        </pawnKindSettings>
+  </AlienRace.RaceSettings>
+
+</Defs>

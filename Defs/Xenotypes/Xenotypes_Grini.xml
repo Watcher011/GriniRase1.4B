@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>Baseline_Grini</defName>
+		<label>Гринеморф</label>
+		<description>Сложный генотип Гринюка.</description>
+		<descriptionShort>Сложный генотип Гринюка.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/GrinMain</iconPath>
+		<nameMaker>NamerGrini</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Grinz_F</li>
+			<li>Immunity_Strong</li>
+			<li>Skin_Green</li>
+			<li>VeryEfficientStomach</li>
+		</genes>
+  </XenotypeDef>
+  
+  
+  <XenotypeDef>
+		<defName>Baseline_Grini_Whaite</defName>
+		<label>Гринеморф-Шаман</label>
+		<description>Сложный генотип Гринюка.</description>
+		<descriptionShort>Сложный генотип Гринюка.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/GrinMain</iconPath>
+		<nameMaker>NamerGrini</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<inheritable>true</inheritable>
+		<genes>
+		    <li>PsychicAbility_Extreme</li>
+			<li>Grinz_F</li>
+			<li>LongjumpLegs</li>
+			<li>Immunity_Strong</li>
+			<li>Skin_SheerWhite</li>
+			<li>Hemogenic</li>
+			<li>VeryEfficientStomach</li>
+		</genes>
+  </XenotypeDef>
+  
+</Defs>

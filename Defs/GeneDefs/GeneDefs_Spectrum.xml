@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <GeneDef ParentName="GeneBeautyBase">
+    <defName>Grinz_F</defName>
+    <label>Зелёная энергия</label>
+    <description>В Гринюке странная сила пробудилась.</description>
+    <iconPath>UI/Icons/Genes/GrinEN</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statOffsets>
+        <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+		  <ConstructionSpeed>0.015</ConstructionSpeed>
+			<DeepDrillingSpeed>0.2</DeepDrillingSpeed>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			 <MedicalTendQuality>-0.2</MedicalTendQuality>
+             <MedicalTendSpeed>-0.2</MedicalTendSpeed>
+    </statOffsets>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>charm</symbol></li>
+        <li><symbol>ele</symbol></li>
+        <li><symbol>grace</symbol></li>
+        <li><symbol>neat</symbol></li>
+        <li><symbol>cute</symbol></li>
+        <li><symbol>beauti</symbol></li>
+        <li><symbol>smooth</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+<!--
+  <GeneDef>
+    <defName>Ears_Grini</defName>
+    <label>Grini ears</label>
+    <description>Carriers of this gene have nova ears.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarElven</iconPath>
+    <biostatCpx>0</biostatCpx>
+    <endogeneCategory>Ears</endogeneCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <displayOrderInCategory>70</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <graphicData>
+      <layer>PostHair</layer>
+      <drawNorthAfterHair>true</drawNorthAfterHair>
+      <useSkinShader>true</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PointedEars/PointedEars</graphicPath>
+      <colorType>Skin</colorType>
+    </graphicData>
+	<capMods>
+	  <li>
+		<capacity>Hearing</capacity>
+		<offset>0.15</offset>
+	  </li>
+	</capMods>
+    <statOffsets>
+      <HuntingStealth>0.1</HuntingStealth>
+    </statOffsets>
+	<exclusionTags>
+      <li>Ears</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>point</symbol></li>
+        <li><symbol>sharp</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>point</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+-->
+
+</Defs>

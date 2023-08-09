@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/ToxicResistance</xpath>
+		<value>
+			<ToxicResistance>0.05</ToxicResistance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/PsychicSensitivity</xpath>
+		<value>
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/ImmunityGainSpeed</xpath>
+		<value>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/GlobalLearningFactor</xpath>
+		<value>
+			<GlobalLearningFactor>1.0</GlobalLearningFactor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/MoveSpeed</xpath>
+		<value>
+			<MoveSpeed>4.85</MoveSpeed>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/ComfyTemperatureMin</xpath>
+		<value>
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/ComfyTemperatureMax</xpath>
+		<value>
+			<ComfyTemperatureMax>32</ComfyTemperatureMax>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/MeleeDodgeChance</xpath>
+		<value>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/MeleeCritChance</xpath>
+		<value>
+			<MeleeCritChance>0.6</MeleeCritChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/MeleeParryChance</xpath>
+		<value>
+			<MeleeParryChance>0.6</MeleeParryChance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/GermResistance</xpath>
+		<value>
+			<GermResistance>0.05</GermResistance>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Grini"]/statBases/GermContainment</xpath>
+		<value>
+			<GermContainment>0.05</GermContainment>
+		</value>
+	</Operation>
+
+</Patch>	

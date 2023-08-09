@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <IncidentDef ParentName="DiseaseIncident">
+    <defName>Disease_GutBUGS</defName>
+    <label>Зелёные блохи</label>
+    <diseaseIncident>GutBug</diseaseIncident>
+	<diseaseVictimFractionRange>0.3~0.7</diseaseVictimFractionRange>
+    <letterLabel>Disease:Это что блохи ? Почему они зелёные?</letterLabel>
+  </IncidentDef>
+  
+ 
+</Defs>

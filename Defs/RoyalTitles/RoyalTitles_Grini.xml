@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============== Empire titles - Player gettable non-psycaster ============================= -->
+
+  <RoyalTitleDef Abstract="True" Name="BaseEmpireTitle" >
+    <tags>
+      <li>EmpireTitle</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+  </RoyalTitleDef>
+
+
+
+  <!-- ============== Empire titles - Player gettable psycaster ============================= -->
+
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>Shaman</defName>
+    <label>Шаман</label>
+    <description>Шаманы – стражи мира духов, и вам предстоит сохранять баланс сил в мироздании. Для этого необходимо провести древний ритуал, но вы чувствуете, что Тьма уже проникла в сердца ваших товарищей. Осталось совсем мало времени, ведь как только луна взойдёт, вы уже ничего не сможете сделать! Спасти бесчисленные миры, изгнав Тени и уничтожив предатателй, или погрузить их в хаос, помешав ритуалу – решать вам.</description>
+    <seniority>100</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseEmpireTitle">
+    <defName>JunShaman</defName>
+    <label>Пси-Одарёный</label>
+    <description>После длительных тренеровок и медитацийвам удалось сломить барьер - истерзанный разум позволил вам увидеть большее.За вами будут Наблюдать силы что за гранью этого мира</description>
+    <seniority>50</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>100</changeHeirQuestPoints>
+    <commonality>1</commonality>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
+  </RoyalTitleDef>
+
+</Defs>
