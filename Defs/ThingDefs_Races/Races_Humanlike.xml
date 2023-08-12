@@ -24,7 +24,7 @@
 				<forcedRaceTraitEntries>
 					<li>
 						<defName>Grinz</defName>
-						<chance>100</chance>
+						<chance>0.99</chance>
 					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>		
@@ -706,7 +706,7 @@
 				<forcedRaceTraitEntries>
 					<li>
 						<defName>Grinz</defName>
-						<chance>100</chance>
+						<chance>0.91</chance>
 					</li>
 				</forcedRaceTraitEntries>
 				<disallowedTraits>		

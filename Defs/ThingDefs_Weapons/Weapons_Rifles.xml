@@ -15,6 +15,9 @@
     </graphicData>
     <statBases>
       <MarketValue>1000</MarketValue>
+	  <ShotSpread>0.004</ShotSpread>
+      <SwayFactor>0.39</SwayFactor>
+      <Bulk>13.1</Bulk>
       <Mass>12</Mass>
       <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
     </statBases>
@@ -38,7 +41,7 @@
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_81mmMortarShell_Incendiary</defaultProjectile>
-        <forcedMissRadius>0.05</forcedMissRadius>
+     <!--   <forcedMissRadius>0.05</forcedMissRadius>-->
         <warmupTime>10.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
         <range>100</range>
@@ -75,6 +78,10 @@
       </li>
       <li Class="CompProperties_Biocodable"/>
     </comps>
+	<smeltProducts>
+            <Weapon_Parts>6</Weapon_Parts>
+            <Plastic>12</Plastic>
+        </smeltProducts>
   </ThingDef>
   
   
