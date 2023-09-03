@@ -6,7 +6,7 @@
     <ThingDef ParentName="BaseGun">
     <defName>Gun_81Rocket</defName>
     <label>Ручной одноразовый миномёт</label>
-    <description>Безумное оружие что применяют Гринюки при штурмах вражеских баз.После залпа корпус оружия превращается в пыль.</description>
+    <description>Безумное оружие что применяют Гринюки при штурмах вражеских баз..</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
     <graphicData>
@@ -38,14 +38,14 @@
     <relicChance>0</relicChance>
     <verbs>
 	 <li Class="CombatExtended.VerbPropertiesCE">
-        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_81mmMortarShell_Incendiary</defaultProjectile>
      <!--   <forcedMissRadius>0.05</forcedMissRadius>-->
         <warmupTime>10.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
         <range>100</range>
-        <burstShotCount>4</burstShotCount>
+        <burstShotCount>1</burstShotCount>
         <soundCast>Mortar_LaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <onlyManualCast>true</onlyManualCast>
@@ -76,6 +76,12 @@
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
+	  <li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>7.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+			</li>
       <li Class="CompProperties_Biocodable"/>
     </comps>
 	<smeltProducts>
