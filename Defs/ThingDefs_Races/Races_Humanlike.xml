@@ -112,10 +112,10 @@
 								</south>
 								<north>
 									<bodyTypes>
-										<Male>(0.1,1)</Male>
-										<Female>(0.1,1)</Female>
-										<Thin>(0.1,1)</Thin>
-										<Hulk>(0.1,1)</Hulk>
+										<Male>(0.1,0.9)</Male>
+										<Female>(0.1,0.9)</Female>
+										<Thin>(0.1,0.9)</Thin>
+										<Hulk>(0.1,0.9)</Hulk>
 										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.2,0.76)</Child>
 										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.2,0.76)</Baby>
 									</bodyTypes>
@@ -139,16 +139,16 @@
 										<Female>(-0.44,.75)</Female>
 										<Thin>(-0.44,.75)</Thin>
 										<Hulk>(-0.44,.75)</Hulk>
-										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.5)</Child>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.5)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.6)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.6)</Baby>
 									</bodyTypes>
 									<portraitBodyTypes>
 										<Male>(-0.44,.75)</Male>
 										<Female>(-0.44,.75)</Female>
 										<Thin>(-0.44,.75)</Thin>
 										<Hulk>(-0.44,.75)</Hulk>
-										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.5)</Child>
-										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.5)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.6)</Child>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.44,0.6)</Baby>
 									</portraitBodyTypes>
 									<headTypes>
 										<Male_AverageNormal>(0,0)</Male_AverageNormal>
